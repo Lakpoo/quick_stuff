@@ -7,13 +7,13 @@ const MenuScreen = () => {
       <Text style={styles.header}>AT & T</Text>
       <TouchableOpacity style={styles.button}>
         <Image
-          source={require('./path_to_your_button_image_1.png')}
+          source={require('../../assets/image/at.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>
       <TouchableOpacity style={styles.button}>
         <Image
-          source={require('./path_to_your_button_image_2.png')}
+          source={require('../../assets/image/t.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>

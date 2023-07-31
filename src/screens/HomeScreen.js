@@ -11,25 +11,25 @@ const HomeScreen = ({ navigation }) => {
       <Text style={styles.header}>Quick Stuff</Text>
       <TouchableOpacity style={styles.square} onPress={onPressMenu}>
         <Image
-          source={require('./path_to_your_image_1.png')}
+          source={require('../../assets/image/mirage.png')}
           style={styles.image}
         />
       </TouchableOpacity>
       <TouchableOpacity style={styles.square} onPress={onPressMenu}>
         <Image
-          source={require('./path_to_your_image_2.png')}
+          source={require('../../assets/image/inferno.jpg')}
           style={styles.image}
         />
       </TouchableOpacity>
       <TouchableOpacity style={styles.square} onPress={onPressMenu}>
         <Image
-          source={require('./path_to_your_image_3.png')}
+          source={require('../../assets/image/dust2.png')}
           style={styles.image}
         />
       </TouchableOpacity>
       <TouchableOpacity style={styles.square} onPress={onPressMenu}>
         <Image
-          source={require('./path_to_your_image_4.png')}
+          source={require('../../assets/image/nuke.png')}
           style={styles.image}
         />
       </TouchableOpacity>
