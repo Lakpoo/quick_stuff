@@ -15,13 +15,13 @@ const MenuScreen = ({ navigation }) => {
       <Text style={styles.header}>AT & T</Text>
       <TouchableOpacity style={styles.button} onPress={onPressTMirage}>
         <Image
-          source={require('../../assets/image/at.png')}
+          source={require('../../assets/image/t.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>
       <TouchableOpacity style={styles.button} onPress={onPressCTMirage}>
         <Image
-          source={require('../../assets/image/t.png')}
+          source={require('../../assets/image/ct.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>
