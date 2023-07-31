@@ -1,17 +1,25 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
-const MenuScreen = () => {
+const MenuScreen = ({ navigation }) => {
+  const onPressTMirage = () => {
+    navigation.navigate('t_mirage');
+  };
+
+  const onPressCTMirage = () => {
+    navigation.navigate('ct_mirage');
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.header}>AT & T</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={onPressTMirage}>
         <Image
           source={require('../../assets/image/at.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button} onPress={onPressCTMirage}>
         <Image
           source={require('../../assets/image/t.png')}
           style={styles.buttonImage}
