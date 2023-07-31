@@ -1,14 +1,38 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
-const SubMenu1 = () => {
+const HomeScreen = ({ navigation }) => {
+  const onPressMenu = () => {
+    navigation.navigate('MenuScreen');
+  };
+
   return (
     <View style={styles.container}>
-      <Image
-        source={require('../../assets/image/at.png')}
-        style={styles.image}
-      />
-      <Text style={styles.text}>Hello world</Text>
+      <Text style={styles.header}>Quick Stuff</Text>
+      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+        <Image
+          source={require('../../assets/image/at.png')}
+          style={styles.image}
+        />
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+        <Image
+          source={require('../../assets/image/at.jpg')}
+          style={styles.image}
+        />
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+        <Image
+          source={require('../../assets/image/at.png')}
+          style={styles.image}
+        />
+      </TouchableOpacity>
+      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+        <Image
+          source={require('../../assets/image/at.png')}
+          style={styles.image}
+        />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -19,16 +43,25 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  image: {
-    width: 200,
-    height: 200,
-    resizeMode: 'contain',
+  header: {
+    fontSize: 24,
+    fontWeight: 'bold',
     marginBottom: 20,
   },
-  text: {
-    fontSize: 18,
-    fontWeight: 'bold',
+  square: {
+    width: '45%',
+    aspectRatio: 1,
+    margin: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#e0e0e0',
+    borderRadius: 10,
+  },
+  image: {
+    width: '80%',
+    height: '80%',
+    resizeMode: 'contain',
   },
 });
 
-export default SubMenu1;
+export default HomeScreen;

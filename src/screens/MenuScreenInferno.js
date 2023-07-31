@@ -2,26 +2,26 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const MenuScreen = ({ navigation }) => {
-  const onPressTMirage = () => {
-    navigation.navigate('tMirage');
+  const onPressTInferno = () => {
+    navigation.navigate('tInferno');
   };
 
-  const onPressCTMirage = () => {
-    navigation.navigate('ctMirage');
+  const onPressCTInferno = () => {
+    navigation.navigate('ctInferno');
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>AT & T</Text>
-      <TouchableOpacity style={styles.button} onPress={onPressTMirage}>
+      <TouchableOpacity style={styles.button} onPress={onPressTInferno}>
         <Image
           source={require('../../assets/image/t.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={onPressCTMirage}>
+      <TouchableOpacity style={styles.button} onPress={onPressCTInferno}>
         <Image
-          source={require('../../assets/image/ct.png')}
+          source={require('../../assets/image/at.png')}
           style={styles.buttonImage}
         />
       </TouchableOpacity>

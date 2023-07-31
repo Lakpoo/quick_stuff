@@ -2,32 +2,41 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const HomeScreen = ({ navigation }) => {
-  const onPressMenu = () => {
-    navigation.navigate('MenuScreen');
+  const onPressMenuMirage = () => {
+    navigation.navigate('MenuScreenMirage');
+  };
+  const onPressMenuInferno = () => {
+    navigation.navigate('MenuScreenInferno');
+  };
+  const onPressMenuDust = () => {
+    navigation.navigate('MenuScreenDust');
+  };
+  const onPressMenuNuke = () => {
+    navigation.navigate('MenuScreenNuke');
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Quick Stuff</Text>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressMenuMirage}>
         <Image
           source={require('../../assets/image/mirage.png')}
           style={styles.image}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressMenuInferno}>
         <Image
           source={require('../../assets/image/inferno.jpg')}
           style={styles.image}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressMenuDust}>
         <Image
           source={require('../../assets/image/dust2.png')}
           style={styles.image}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressMenuNuke}>
         <Image
           source={require('../../assets/image/nuke.png')}
           style={styles.image}
