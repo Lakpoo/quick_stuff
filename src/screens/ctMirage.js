@@ -2,32 +2,32 @@ import React from 'react';
 import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const HomeScreen = ({ navigation }) => {
-  const onPressMenu = () => {
-    navigation.navigate('MenuScreen');
+  const onPressStuff1 = () => {
+    navigation.navigate('ficheStuff/stuffMirage1');
   };
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Quick Stuff</Text>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressStuff1}>
         <Image
           source={require('../../assets/image/at.png')}
           style={styles.image}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressStuff2}>
         <Image
           source={require('../../assets/image/at.png')}
           style={styles.image}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressStuff3}>
         <Image
           source={require('../../assets/image/at.png')}
           style={styles.image}
         />
       </TouchableOpacity>
-      <TouchableOpacity style={styles.square} onPress={onPressMenu}>
+      <TouchableOpacity style={styles.square} onPress={onPressStuff4}>
         <Image
           source={require('../../assets/image/at.png')}
           style={styles.image}
