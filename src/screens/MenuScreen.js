@@ -3,11 +3,11 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const MenuScreen = ({ navigation }) => {
   const onPressTMirage = () => {
-    navigation.navigate('t_mirage');
+    navigation.navigate('tMirage');
   };
 
   const onPressCTMirage = () => {
-    navigation.navigate('ct_mirage');
+    navigation.navigate('ctMirage');
   };
 
   return (
