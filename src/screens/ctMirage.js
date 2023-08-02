@@ -3,7 +3,16 @@ import { View, Text, TouchableOpacity, Image, StyleSheet } from 'react-native';
 
 const HomeScreen = ({ navigation }) => {
   const onPressStuff1 = () => {
-    navigation.navigate('ficheStuff/stuffMirage1');
+    navigation.navigate('ficheStuff/stuffMirage1CT');  
+  };
+  const onPressStuff2 = () => {
+    navigation.navigate('ficheStuff/stuffMirage2CT');  
+  };
+  const onPressStuff3 = () => {
+    navigation.navigate('ficheStuff/stuffMirage3CT');  
+  };
+  const onPressStuff4 = () => {
+    navigation.navigate('ficheStuff/stuffMirage4CT');
   };
 
   return (
